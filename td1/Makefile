@@ -1,0 +1,14 @@
+JFLAGS=-ea
+JC=javac
+Classpath=./td1
+
+all: test
+
+
+
+test:
+	$(JC) -classpath ./tst ./tst/Test*.java
+	java $(JFLAGS) -cp ./tst TestJauge
+	java $(JFLAGS) -cp ./tst TestPosition
+clean:
+	rm ./tst/Test*.class

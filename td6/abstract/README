@@ -1,0 +1,4 @@
+
+make : Lancer l'exécution de Simple
+
+make test : Lancer les tests
